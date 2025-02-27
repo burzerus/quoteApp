@@ -21,7 +21,7 @@ class RepositoryImpl(
                 val quote = service.animeQuote().quote
                   Pair(true, quote)
               } catch (e: Exception) {
-                  Pair(false, e.message ?: "eroor")
+                  Pair(false, e.message ?: "error")
               }
 
     }

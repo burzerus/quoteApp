@@ -23,3 +23,4 @@ rootProject.name = "MonoWeather"
 include(":app")
 include(":domain")
 include(":data")
+include(":presentation")
