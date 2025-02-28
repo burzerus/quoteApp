@@ -1,21 +1,20 @@
 # QuoteApp
 
-## 📜 Описание
-QuoteApp — это Android-приложение, которое показывает случайные цитаты. Использует современный стек технологий для работы с сетевыми запросами и управления зависимостями.
+## 📜 Description  
+QuoteApp is an Android application that displays random quotes. It utilizes a modern technology stack for handling network requests and dependency management.
 
 ---
 
-## 🛠 Технологии (Стек)
-- **MVVM** – архитектурный паттерн для разделения логики, данных и UI  
-- **Hilt** – Dependency Injection (DI) для управления зависимостями  
-- **Retrofit** – HTTP-клиент для работы с API  
-- **Coroutines** – обработка асинхронных операций  
+## 🛠 Technologies (Stack)  
+- **MVVM** – An architectural pattern for separating logic, data, and UI  
+- **Hilt** – Dependency Injection (DI) for managing dependencies  
+- **Retrofit** – An HTTP client for interacting with APIs  
+- **Coroutines** – For handling asynchronous operations  
 
 ---
 
-
-
-## 🚀 Как запустить проект
-1. **Клонировать репозиторий**:
+## 🚀 How to Run the Project  
+1. **Clone the repository**:  
    ```sh
-   git clone  https://github.com/burzerus/quoteApp.git
+   git clone https://github.com/burzerus/quoteApp.git
+   
