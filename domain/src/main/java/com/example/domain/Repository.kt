@@ -7,7 +7,8 @@ interface Repository {
      * String - data
      */
 
-
     suspend fun loadQuote() : Pair<Boolean, String>
+    suspend fun loadTitle() : Pair<Boolean, String>
+
 
 }

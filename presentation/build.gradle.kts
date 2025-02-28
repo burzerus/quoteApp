@@ -1,11 +1,13 @@
 plugins {
     alias(libs.plugins.android.library)
     alias(libs.plugins.kotlin.android)
+    id("kotlin-kapt")
+    id("com.google.dagger.hilt.android")
 }
 
 android {
     namespace = "com.example.presentation"
-    compileSdk = 34
+    compileSdk = 35
 
     defaultConfig {
         minSdk = 24
@@ -34,9 +36,20 @@ android {
         viewBinding = true
     }
 }
+// Allow references to generated code
+kapt {
+    correctErrorTypes = true
+}
 
 dependencies {
     implementation(project(":domain"))
+
+
+    //надо фрагмент вместо ktx
+
+    implementation("androidx.activity:activity-ktx:1.10.1")
+    implementation("com.google.dagger:hilt-android:2.51.1")
+    kapt("com.google.dagger:hilt-android-compiler:2.51.1")
 
     implementation(libs.androidx.core.ktx)
     implementation(libs.androidx.appcompat)
